@@ -38,3 +38,9 @@ make update
 ``` makefile 
 make compile 
 ```
+***
+
+## Agar qanday muammo bo'lsa 
+<a href="https://t.me/dostonbek_05" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" width="32" height="32">
+</a>
