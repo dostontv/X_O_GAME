@@ -1,52 +1,59 @@
-## Xulas zerikandan yozilgan proyekt endi boshlayotgan dasturchilar uchun juda chunarli sodda deb oyliman
+# 🎮 Telegram XO Game Bot
 
-### Proyekt webhook yoki polling ishlatishingiz mumkin
+A simple yet engaging **Tic‑Tac‑Toe (XO)** game built with **Aiogram** for Telegram.  
+Players can challenge each other or play against the bot, with support for both **webhook** and **polling** modes.
 
-***
+---
 
-### Ishlatilgan kutibxonalar asosiylari (qolganlari requirements.txt faylida bo'ladi)
+## ✨ Features
+- Interactive **XO (Tic‑Tac‑Toe)** gameplay inside Telegram  
+- Supports **two‑player mode** or **player vs bot**  
+- **Webhook** and **polling** options for deployment  
+- **Redis** integration for session and state management  
+- **Localization** support with `locales` directory  
+- Code quality tools: `isort` and `flake8`  
 
-* Aiogram
-* Isort
-* Flask8
-* Redis
+---
 
-***
+## 📦 Installation
 
-### Projectni ishlatish oldin
+Clone the repository and set up the environment:
 
-``` commandline
+```bash
+git clone https://github.com/dostontv/x_o_game.git
+cd telegram-xo-game
 python3 -m venv .venv
-```
-
-```commandline
+source .venv/bin/activate
 pip3 install -r requirements.txt
 ```
 
-``` commandline
-mkdir locales 
+🌍 Localization Setup
+Create the locales directory and run the following commands:
+bash
+mkdir locales
+make extract
+make init
+make update
+make compile
+
+## 🛠️ Development
+Run linting and style checks:
+bash
+isort .
+flake8 .
+
+## 🚀 Usage
+Start the bot in polling mode:
+bash
+python bot.py
+Or configure webhook mode for production deployment.
+
+## 📂 Project Structure
 ```
-
-``` makefile 
-make extract 
+Code
+├── src/              # Main bot source code
+├── locales/          # Translation files
+├── requirements.txt  # Dependencies
+├── Makefile          # Localization commands
+└── README.md         # Project documentation
 ```
-
-``` makefile 
-make init 
-```
-
-``` makefile 
-make update 
-```
-
-``` makefile 
-make compile 
-```
-
-***
-
-## Agar qanday muammo bo'lsa
-
-<a href="https://t.me/dostonbek_05" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" width="32" height="32">
-</a>
